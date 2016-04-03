@@ -11,7 +11,7 @@ var Card = React.createClass({
     },
 
   render: function(){
-    return (
+    return(
       <div>
         <img src={this.state.avatar_url} width="50" />
         <h3> {this.state.name} </h3>
@@ -28,11 +28,10 @@ var Form = React.createClass({
     inputLogin.value = '';
   },
   render: function(){
-    return(
-        <h3> User input form</h3>
-        <form onSubmit={this.handleSubmit}>
-          <input placeholder="Github user" ref="login"/>
-          <button>Add<button/>
+    return (
+         <form onSubmit={this.handleSubmit}>
+         <input placeholder="githuub api" ref="login"/>
+          <button>Add</button>
         </form>
     );
   }
@@ -40,14 +39,14 @@ var Form = React.createClass({
 
 var Main = React.createClass({
   getInitialState: function(){
-    return {logins: ['andela-rekemezie', 'andela-eakinyele', 'row123', 'andela-ashuaib', 'petehunt']}
+    return {logins: ['andela-rekemezie', 'andela-eakinyele', 'andela-ashuaib', 'petehunt']}
   },
   addCard: function(inputLogin){
     this.setState({logins: this.state.logins.concat(inputLogin)})
   },
   render: function(){
-  var cards = this.state.logins.map(function(login){
-    return (<Card login={login} />)
+  var cards = this.state.logins.map(function(user){
+    return (<Card login={user} />)
   });
     return (
       <div>
