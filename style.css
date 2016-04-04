@@ -18,10 +18,9 @@
 
 #answer-frame .well, #star-frame .well {
   height:150px;
-  background-color: green;
 }
 
-#number-frame .number {
+#number-frame .number, #answer-frame .well span {
   display: inline-block;
   margin: 0.5em;
   background-color: #bbb;
@@ -30,4 +29,12 @@
   border-radius:50%;
   font-size: 22px;
   cursor: pointer;
+}
+h3{
+  text-align: center;
+}
+#number-frame .selected-true {
+  cursor: not-allowed;
+  color:#bbb;
+  background-color:#e8e8e8e;
 }
