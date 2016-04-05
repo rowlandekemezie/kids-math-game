@@ -30,11 +30,17 @@
   font-size: 22px;
   cursor: pointer;
 }
+
 h3{
   text-align: center;
 }
+
 #number-frame .selected-true {
   cursor: not-allowed;
   color:#bbb;
   background-color:#e8e8e8e;
+}
+#number-frame .used-true{
+  color: #9934ff;
+  background-color: #00ff00;
 }
