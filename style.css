@@ -1,0 +1,46 @@
+/* Styles go here */
+#star-frame .glyphicon{
+  font-size: 1.75em;
+  margin:0.3em;
+}
+
+#star-frame, #answer-frame {
+  float: left;
+  width: 40%;
+}
+
+#button-frame{
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top:50px;
+}
+
+#answer-frame .well, #star-frame .well {
+  height:150px;
+}
+
+#number-frame .number, #answer-frame .well span {
+  display: inline-block;
+  margin: 0.5em;
+  background-color: #bbb;
+  width: 30px;
+  text-align: center;
+  border-radius:50%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+h3{
+  text-align: center;
+}
+
+#number-frame .selected-true {
+  cursor: not-allowed;
+  color:#bbb;
+  background-color:#e8e8e8e;
+}
+#number-frame .used-true{
+  color: #9934ff;
+  background-color: #00ff00;
+}
